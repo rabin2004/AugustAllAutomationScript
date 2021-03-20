@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [First Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Sanity Test(failed)">
+    <classes>
+      <class name="testNG.DataDrivenTestNgDataProvider">
+        <methods>
+          <include name="negativeSignFunctionality" invocation-numbers="3"/>
+          <include name="positiveSignFunctionality" invocation-numbers="3"/>
+          <include name="launchBrowser"/>
+          <include name="closeBroswer"/>
+        </methods>
+      </class> <!-- testNG.DataDrivenTestNgDataProvider -->
+      <class name="testNG.AssertionConcept">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="submitBtnEnable"/>
+          <include name="closeBroswer"/>
+          <include name="submitBtnEnableAfterCredentials"/>
+        </methods>
+      </class> <!-- testNG.AssertionConcept -->
+    </classes>
+  </test> <!-- Sanity Test(failed) -->
+</suite> <!-- Failed suite [First Suite] -->
